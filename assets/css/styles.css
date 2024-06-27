@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+AU+VIC:wght@100..400&display=swap');
+
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: "Merriweather", serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
@@ -51,6 +53,10 @@ body {
 section {
   /* max-width: 1100px;
   margin: auto; */
+}
+
+h1, h2, h3, h4{
+  font-weight: var(--bolder-font);
 }
 
 /* CSS Resets end */
@@ -155,18 +161,18 @@ nav ul li {
 /* More about ends */
 
 /* Skills section */
-.skills {
+.education {
   max-width: 68.75rem;
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
 }
 
-.skill-header {
+.education-header {
   margin-bottom: 1rem;
 }
 
-.skills-wrapper img {
+.education-wrapper img {
   padding: 1.25rem;
 }
 
