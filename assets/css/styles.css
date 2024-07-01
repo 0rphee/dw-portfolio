@@ -126,24 +126,24 @@ nav>div.container-fluid {
   content: "";
   height: 1rem;
   width: 1rem;
-  background-image: url("assets/icons/github-mark/github-mark.png");
+  background-image: url("../icons/github-mark/github-mark.png");
   background-size: 100%;
   margin-right: 0.5rem;
 }
 
 [data-bs-theme=dark] .git-link::before {
-  background-image: url("assets/icons/github-mark/github-mark-white.png");
+  background-image: url("../icons/github-mark/github-mark-white.png");
 
 }
 
 
 /* website logo white & dark */
 [data-bs-theme=dark] nav img {
-  content: url("assets/icons/light/android-chrome-512x512.png");
+  content: url("../icons/light/android-chrome-512x512.png");
 }
 
 [data-bs-theme=light] nav img {
-  content: url("assets/icons/dark/android-chrome-512x512.png");
+  content: url("../icons/dark/android-chrome-512x512.png");
 }
 
 /* 
@@ -204,15 +204,15 @@ footer img {
 }
 
 [data-bs-theme=dark] #logo-up {
-  content: url("assets/images/logoUPBlanco.png");
+  content: url("../images/logoUPBlanco.png");
 }
 
 [data-bs-theme=dark] footer img {
-  content: url("assets/icons/github-mark/github-mark-white.png");
+  content: url("../icons/github-mark/github-mark-white.png");
 }
 
 [data-bs-theme=light] footer img {
-  content: url("assets/icons/github-mark/github-mark.png");
+  content: url("../icons/github-mark/github-mark.png");
 }
 
 /* Scroll to top button */
