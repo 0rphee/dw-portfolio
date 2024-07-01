@@ -226,8 +226,111 @@
         </section>
         <!-- Educación-->
 
+        <!-- Proyectos -->
+        <section class="row mx-0 align-items-center" id="projects">
+            <div class="card rounded-0 p-3 highlight">
+                <div class="card-body">
+                    <h3 class="card-title">Proyectos</h3>
 
-    <!-- Footer section -->
+                    <!-- Galería de Proyectos -->
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4">
+
+                            <div class="col card rounded-0 p-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">schedule-maker</h5>
+                                    <p class="card-text">Programa de línea de comando para generar horarios de clases
+                                        sin conflictos a partir de un archivo <span class="font-monospace">.yaml</span>.
+                                        Genera calendarios (archivos <span class="font-monospace">.ics</span> para
+                                        Google Calendar y iCalendar de Apple) y archivos de Excel (<span
+                                            class="font-monospace">.xlsx</span>), con todos los
+                                        horarios válidos.
+                                    </p>
+
+                                    <p class="card-text">
+                                        Creé este programa para generar mis horarios de cada semestre solamente
+                                        especificando
+                                        las clases que deseo tomar y los profesores disponibles de cada materia.
+                                    </p>
+
+                                    <span class="text-decoration-underline card-link">Haskell</span>
+                                    <a class="git-link card-link"
+                                        href="https://github.com/0rphee/schedule-maker">Repositorio</a>
+                                </div>
+                                <img class="img-fluid card-img-bottom" src="assets/images/schedule-maker.png"
+                                    alt="Screenshots del README del proyecto"></im>
+                            </div>
+
+                            <div class="col card rounded-0 p-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">prop-logic-paevty</h5>
+                                    <p class="card-text">Programa de línea de comando para crear tablas de verdad
+                                        para <a href="https://typst.app/">typst</a> a partir de fórmulas
+                                        proposicionales.
+                                    </p>
+
+                                    <p class="card-text">
+                                        La funcionalidad original <a
+                                            href="https://github.com/0rphee/up/tree/main/lpro">fue escrita en Python
+                                        </a> pero cuando necesité más funcionalidad lo reescribí en Haskell. Lo usé para
+                                        verificar y generar tablas de verdad de las tareas de mi clase de Lógica
+                                        Proposicional.
+                                    </p>
+
+                                    <span class="text-decoration-underline card-link">Haskell</span>
+                                    <span class="text-decoration-underline card-link">Typst</span>
+                                    <a class="git-link card-link"
+                                        href="https://github.com/0rphee/prop-logic-paevty">Repositorio</a>
+                                </div>
+                                <img class="img-fluid card-img-bottom" src="assets/images/prop-logic-paevty.png"
+                                    alt="Screenshots del README del proyecto"></im>
+                            </div>
+
+                            <div class="col card rounded-0 p-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">ia-vuelos</h5>
+                                    <p class="card-text">
+                                        Proyecto final de la clase de Inteligencia Artificial: un servicio búsqueda de
+                                        vuelos de avión entre aeropuertos para una fecha determinada. Se usa información
+                                        real de aeropuertos y aviones, pero los vuelos en sí son autogenerados
+                                        previamente.
+                                    </p>
+
+                                    <p class="card-text">
+                                        La generación de vuelos es realizada por varios scripts de Python que llenan una
+                                        una base de datos de MySQL. La búsqueda en sí se hace en un servidor de Flask,
+                                        con un frontend escrito en Elm. Se usa Docker para el manejo de los servicios
+                                        localmente.
+                                    </p>
+
+                                    <span class="text-decoration-underline card-link">Python</span>
+                                    <span class="text-decoration-underline card-link">MySQL</span>
+                                    <span class="text-decoration-underline card-link">phpMyAdmin</span>
+                                    <span class="text-decoration-underline card-link">Elm</span>
+                                    <span class="text-decoration-underline card-link">Docker</span>
+                                    <a class="git-link card-link"
+                                        href="https://github.com/0rphee/ia-vuelos">Repositorio</a>
+                                </div>
+                                <img class="img-fluid card-img-bottom" src="assets/images/ia-vuelos.png"
+                                    alt="Screenshots del README del proyecto"></im>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- Galería de Proyectos -->
+
+                </div>
+            </div>
+        </section>
+        <!-- Proyectos -->
+
+    </div>
+    <!-- Contenido -->
+
+
+    <!-- Footer -->
     <div style="bottom: 1.5em;" class="highlight mt-5 mx-5  border border-dark-subtle bg-body">
         <footer class="d-flex flex-column align-items-center gap-0 my-3">
             <a href="https://github.com/0rphee">
