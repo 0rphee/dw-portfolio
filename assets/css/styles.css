@@ -47,6 +47,7 @@ nav>div.container-fluid {
 .me-container img {
   width: 100%;
   height: auto;
+  min-width: 10vh;
 }
 
 .me-container {
