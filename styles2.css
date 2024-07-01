@@ -24,7 +24,7 @@ nav>div.container-fluid {
 .card h4,
 .card h5,
 .card h6 {
-  border-bottom: 1px solid var(--bs-body-color);
+  border-bottom: 1px dotted var(--bs-body-color);
 }
 
 .card h4 {
@@ -43,6 +43,20 @@ nav>div.container-fluid {
   /* stop content overflow from overlapping with footer */
   margin-bottom: 5em;
 }
+
+.me-container img {
+  width: 100%;
+  height: auto;
+}
+
+.me-container {
+  max-width: 65%;
+  height: 50%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 
 .school-logo {
   height: 1rem;
@@ -180,8 +194,17 @@ footer img {
   background-image: url("https://www.up.edu.mx/wp-content/uploads/2022/01/01-1.jpg");
   background-size: auto 100%;
   background-position: center;
-  padding: 3em;
+  /* padding: 3em; */
   z-index: 0;
+}
+
+#employment img {
+  position: relative;
+  z-index: -1;
+}
+
+[data-bs-theme=dark] #logo-up {
+  content: url("assets/images/logoUPBlanco.png");
 }
 
 [data-bs-theme=dark] footer img {
@@ -192,6 +215,32 @@ footer img {
   content: url("assets/icons/github-mark/github-mark.png");
 }
 
-#copyright {
-  font-size: 12px;
+/* Scroll to top button */
+.scroll-up {
+  position: fixed;
+  right: 1.5%;
+  bottom: 1.5%;
+  cursor: pointer;
+}
+
+[data-bs-theme=dark] .scroll-up {
+  filter: invert(1);
+
+}
+
+.scroll-up>img {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Scroll to top button ends */
+
+footer>span {
+  /* copyright */
+  font-size: 0.9rem;
+}
+
+footer>p {
+  /* copyright */
+  font-size: 0.8rem;
 }
