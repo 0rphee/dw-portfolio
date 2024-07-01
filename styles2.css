@@ -27,6 +27,10 @@ nav>div.container-fluid {
   border-bottom: 1px solid var(--bs-body-color);
 }
 
+.card h4 {
+  margin-right: 1em;
+}
+
 .card h5 {
   margin-right: 2em;
 }
@@ -42,6 +46,65 @@ nav>div.container-fluid {
 
 .school-logo {
   height: 1rem;
+}
+
+#habilidades ul,
+#habilidades li {
+  list-style-type: none;
+}
+
+#habilidades .progress {
+  height: 0.2rem;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Adjust gap for spacing between cards */
+  gap: 1rem;
+  /* Center the container horizontally */
+  margin: 0 auto;
+}
+
+/* 
+  Using BOOTSTRAP BREAKPOINTS sizes
+  https://getbootstrap.com/docs/5.3/layout/breakpoints/#available-breakpoints
+*/
+
+/* > 1200px = xl xxl */
+.card-container>.card {
+  flex: 1 0 calc(33.33% - 1rem);
+}
+
+@media (min-width: 1201px) {
+
+  /* selects the last cards when they can't complete a row of 3 elements */
+  .card-container>.card:last-child:nth-child(3n+1) {
+    max-width: 33.33%;
+    right: 0.5rem;
+  }
+}
+
+/* < 1200px = lg */
+@media (max-width: 1200px) {
+  .card-container>.card {
+    flex: 1 0 calc(50% - 1rem);
+  }
+}
+
+/* < 992px = md */
+@media (max-width: 992px) {
+  .card-container>.card {
+    flex: 1 0 50%;
+  }
+}
+
+/* < 768px = sm */
+@media (max-width: 768px) {
+  .card-container>.card {
+    flex: 1 0 100%;
+  }
 }
 
 .git-link::before {
@@ -115,7 +178,8 @@ footer img {
 
 #education {
   background-image: url("https://www.up.edu.mx/wp-content/uploads/2022/01/01-1.jpg");
-  background-size: 100%;
+  background-size: auto 100%;
+  background-position: center;
   padding: 3em;
   z-index: 0;
 }
@@ -126,4 +190,8 @@ footer img {
 
 [data-bs-theme=light] footer img {
   content: url("assets/icons/github-mark/github-mark.png");
+}
+
+#copyright {
+  font-size: 12px;
 }
