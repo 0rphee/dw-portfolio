@@ -27,19 +27,19 @@
     <!-- <script defer src="assets/js/app.js"></script> -->
     <script defer src="color-mode.js"></script>
 
-    <title>Rogelio Galindo | Web Developer</title>
+    <title>Rogelio Galindo</title>
 </head>
 
 <body>
     <!-- Navbar -->
 
-    <div style="top: 0.25em;" class="highlight mx-5  border border-dark-subtle">
-        <nav class="navbar navbar-expand-md bg-body p-3 border-bottom border-dark-subtle">
+    <div style="top: 0.25em;" class="highlight mx-5 mb-5 ">
+        <nav class="navbar navbar-expand-md bg-body p-3 border border-dark-subtle">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex align-items-center gap-3" href="#">
-                    <img src="assets/icons/android-chrome-512x512.png" alt="Logo" width="40" height="40"
+                    <img src="assets/icons/dark/android-chrome-512x512.png" alt="Logo" width="40" height="40"
                         class="d-inline-block align-text-top">
-                        <div class="vr"></div>
+                    <div class="vr"></div>
                     Rogelio Galindo
                 </a>
                 <div class="collapse navbar-collapse" id="nav-var-section-links">
@@ -70,7 +70,7 @@
                                 </svg>
                                 <!-- <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span> -->
                             </button>
-                            <ul id="theme-dropdown" class="dropdown-menu dropdown-menu-end">
+                            <ul id="theme-dropdown" class="py-0 rounded-0 dropdown-menu dropdown-menu-end">
                                 <li>
                                     <button type="button" class="dropdown-item d-flex align-items-center"
                                         data-bs-theme-value="light">
@@ -148,7 +148,7 @@
                         </li>
                     </ul>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler rounded-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#nav-var-section-links">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -158,32 +158,35 @@
 
     <!-- Navbar -->
 
-    <!-- Hero Section -->
-    <section class="d-flex mx-5 pt-5" id="about">
-        <img src="assets/images/wfh_1.svg" class="w-50" alt="Rogelio Galindo" loading="lazy" />
-        <div
-            class="container p-3 w-50 align-self-center bg-body border border-dark-subtle highlight">
-            <h3 class="">Sobre mí</h3>
-            <p class="">
-                Soy un estudiante de Filosofía y de Ing. en Inteligencia de Datos y Ciberseguridad. Me interesa la
-                lógica y la programación funcional, especialmente lenguajes como <a
-                    href="https://www.haskell.org/">Haskell</a> e <a
-                    href="https://www.idris-lang.org/index.html">Idris2</a>. </p>
-            <h5>Hobbies</h5>
-            <p>
-                En mi tiempo libre me gusta leer, jugar tenis e ir al gimnasio. Aunque ya no suelo jugar videojuegos, me
-                siguen gustando mucho, y en el futuro me gustaría dedicarle más tiempo a ellos. Entre mis juegos
-                favoritos están Overwatch, Halo Reach y Civ VI.
-            </p>
-            <p>
-                También me gusta mucho trabajar en proyectos de código propios para resolver problemas que tenga o
-                simplemente investigar algún tema que me interese. Me fascinan los lenguajes funcionales, y siempre que
-                puedo hago mis proyectos en alguno de estos, como Haskell o Elm (o incluso Rust). Sin embargo, a futuro
-                también me gustaría aprender más de desarrollo embebido con C o Rust.
-            </p>
-        </div>
-    </section>
-    <!-- Hero Section -->
+    <!-- Contenido -->
+    <div class="d-flex flex-column mx-5 px-0 gap-5 content">
+        <!-- Sobre mí -->
+        <section class="row mx-0 align-items-center" id="about">
+            <div class="col-sm-12 col-md-5">
+                <img src="assets/images/wfh_1.svg" class="img-fluid" alt="Rogelio Galindo" loading="lazy" />
+            </div>
+            <div class="card rounded-0 col-sm-12 col-md-7 p-3 highlight">
+                <h3>Sobre mí</h3>
+                <p>
+                    Soy un estudiante de Filosofía y de Ing. en Inteligencia de Datos y Ciberseguridad. Me interesa la
+                    lógica y la programación funcional, especialmente lenguajes como <a
+                        href="https://www.haskell.org/">Haskell</a> e <a
+                        href="https://www.idris-lang.org/index.html">Idris2</a>. </p>
+                <h5>Hobbies</h5>
+                <p>
+                    En mi tiempo libre me gusta leer, jugar tenis e ir al gimnasio. Ya no suelo jugar videojuegos, pero
+                    entre mis juegos favoritos están Overwatch, Halo Reach y Civ VI.
+                </p>
+                <p>
+                    También me gusta mucho trabajar en proyectos de código propios para resolver problemas que tenga o
+                    simplemente investigar algún tema que me interese. Me agradan mucho los lenguajes funcionales, y
+                    siempre
+                    que puedo hago mis proyectos en alguno de estos, como Haskell, Elm o Rust. Sin embargo, a
+                    futuro también me gustaría aprender y trabajar con C.
+                </p>
+            </div>
+        </section>
+        <!-- Sobre mí -->
 
     <section class="d-flex justify-content-sm-evenly mx-5 pt-5" id="about">
         <div class="card rounded-0 flex-grow-1">
