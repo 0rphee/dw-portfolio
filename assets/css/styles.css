@@ -297,3 +297,9 @@ footer>p {
     background-position: 0% 50%;
   }
 }
+
+@media (max-width: 575.98px) {
+  body {
+    font-size: 0.725rem;
+  }
+}
