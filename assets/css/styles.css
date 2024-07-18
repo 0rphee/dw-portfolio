@@ -25,6 +25,7 @@ nav>div.container-fluid {
 .card h5,
 .card h6 {
   border-bottom: 1px dotted var(--bs-body-color);
+  margin-bottom: 0.5em;
 }
 
 .card h4 {
@@ -66,6 +67,10 @@ nav>div.container-fluid {
 #habilidades ul,
 #habilidades li {
   list-style-type: none;
+}
+
+#habilidades li li:not(:last-child) {
+  margin-bottom: 0.8em;
 }
 
 #habilidades .progress {
