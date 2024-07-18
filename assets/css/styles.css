@@ -250,3 +250,50 @@ footer>p {
   /* copyright */
   font-size: 0.8rem;
 }
+
+.card-container .col.card,
+.colors {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-container .col.card::before,
+.colors::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(134deg, #ffe6e6, #e6e9ff, #ffffe6, #ecffe6, #e6fffe, #fde6ff);
+  background-size: 300% 300%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.card-container .col.card:hover::before,
+.colors:hover::before {
+  opacity: 1;
+  animation: gradient-animation 6s ease infinite;
+}
+
+.card-container .col.card>*,
+.colors>* {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
