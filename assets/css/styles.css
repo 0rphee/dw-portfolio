@@ -272,6 +272,22 @@ footer>p {
   z-index: 0;
 }
 
+[data-bs-theme=dark] .card-container .col.card::before,
+[data-bs-theme=dark] .colors::before {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(134deg, #a5000355, #a100a555, #001ea555, #00a59955, #00a50555, #95a50055);
+  background-size: 300% 300%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
 .card-container .col.card:hover::before,
 .colors:hover::before {
   opacity: 1;
