@@ -167,13 +167,13 @@
     <!-- Contenido -->
     <div class="d-flex flex-column mx-4 mx-md-5 px-0 gap-5 content link-offset-2">
         <!-- Sobre mí -->
-        <section class="row mx-0 align-items-center" id="about">
-            <div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center">
+        <section class="row mx-0 row- align-items-center" id="about">
+            <div class="col-12 col-md-7 col-lg-5 d-flex align-items-center justify-content-center">
                 <div class="mb-4 mb-sm-4 mb-md-0 me-container">
                     <img src="assets/images/me.jpg" class="img-fluid" alt="Rogelio Galindo" loading="lazy" />
                 </div>
             </div>
-            <div class="card rounded-0 col-sm-12 col-md-7 p-3 highlight">
+            <div class="card rounded-0 col-12 col-md-5 col-lg-7 p-3 highlight">
                 <h3>Sobre mí</h3>
                 <p>
                     Soy un estudiante de Filosofía y de Ing. en Inteligencia de Datos y Ciberseguridad. Me interesa la
@@ -242,9 +242,15 @@
                                 Lenguajes
                                 <ul>
                                     <li>
+                                        C
+                                        <div class="progress" role="progressbar">
+                                            <div style="width: 50%;" class="progress-bar"></div>
+                                        </div>
+                                    </li>
+                                    <li>
                                         C++
                                         <div class="progress" role="progressbar">
-                                            <div style="width: 70%;" class="progress-bar"></div>
+                                            <div style="width: 50%;" class="progress-bar"></div>
                                         </div>
                                     </li>
                                     <li>
@@ -278,9 +284,21 @@
                                         </div>
                                     </li>
                                     <li>
+                                        Java
+                                        <div class="progress" role="progressbar">
+                                            <div style="width: 75%;" class="progress-bar"></div>
+                                        </div>
+                                    </li>
+                                    <li>
                                         JavaScript
                                         <div class="progress" role="progressbar">
                                             <div style="width: 60%;" class="progress-bar"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        PureScript
+                                        <div class="progress" role="progressbar">
+                                            <div style="width: 85%;" class="progress-bar"></div>
                                         </div>
                                     </li>
                                     <li>
@@ -292,7 +310,7 @@
                                     <li>
                                         Rust
                                         <div class="progress" role="progressbar">
-                                            <div style="width: 65%;" class="progress-bar"></div>
+                                            <div style="width: 75%;" class="progress-bar"></div>
                                         </div>
                                     </li>
                                     <li>
@@ -376,7 +394,7 @@
                                     <li>
                                         React
                                         <div class="progress" role="progressbar">
-                                            <div style="width: 45%;" class="progress-bar"></div>
+                                            <div style="width: 60%;" class="progress-bar"></div>
                                         </div>
                                     </li>
                                 </ul>
@@ -463,6 +481,73 @@
                         <!-- Inicio Proyecto -->
                         <div class="col card rounded-0 p-3">
                             <div class="card-body">
+                                <h5 class="card-title">xolsh</h5>
+                                <p class="card-text">
+                                    Implementación completa en Haskell del lenguaje <span class="font-monospace">lox</span> del
+                                    libro
+                                    <a href="https://craftinginterpreters.com/">Crafting Interpreters</a>. Cuenta con un intérprete en línea: <a href="https://0rphee.github.io/xolsh/">https://0rphee.github.io/xolsh/</a> .
+                                </p>
+
+                                <span class="text-decoration-underline card-link">Haskell</span>
+                                <span class="text-decoration-underline card-link">JavaScript</span>
+                                <a class="git-link card-link" href="https://github.com/0rphee/xolsh">Repositorio</a>
+                            </div>
+                            <img class="img-fluid card-img-bottom" src="assets/images/xolsh.png"
+                                alt="Screenshots del README del proyecto">
+                        </div>
+                        <!--Fin Proyecto -->
+
+                        <!-- Inicio Proyecto -->
+                        <div class="col card rounded-0 p-3">
+                            <div class="card-body">
+                                <h5 class="card-title">asmh</h5>
+                                <p class="card-text">
+                                    Proyecto final de la clase Arquitectura de Computadoras.
+                                </p>
+                                <p class="card-text">
+                                    Un ensamblador (muy limitado) para el chip Intel 8086 (x86 de 16 bits). Fue probado con el emulador 'emu8086'.
+                                </p>
+
+                                <span class="text-decoration-underline card-link">Haskell</span>
+                                <a class="git-link card-link"
+                                    href="https://github.com/0rphee/asmh">Repositorio</a>
+                            </div>
+                            <img class="img-fluid card-img-bottom" src="assets/images/asmh.png"
+                                alt="Screenshots del README del proyecto">
+                        </div>
+                        <!--Fin Proyecto -->
+
+                        <!-- Inicio Proyecto -->
+                        <div class="col card rounded-0 p-3">
+                            <div class="card-body">
+                                <h5 class="card-title">bda-dashboard</h5>
+                                <p class="card-text">
+                                    Proyecto final de la clase de Bases de Datos Avanzadas: un
+                                    dashboard de visualizaión de datos de Steam.
+                                </p>
+                                <p class="card-text">
+                                    El backend de Flask se comunica una base de datos MySQL para mandar los Datos
+                                    al frontend escrito en React. Los servicios se pueden lanzar localmente con
+                                    Docker.
+                                </p>
+
+                                <span class="text-decoration-underline card-link">Python</span>
+                                <span class="text-decoration-underline card-link">MySQL</span>
+                                <span class="text-decoration-underline card-link">phpMyAdmin</span>
+                                <span class="text-decoration-underline card-link">JavaScript</span>
+                                <span class="text-decoration-underline card-link">React</span>
+                                <span class="text-decoration-underline card-link">Docker</span>
+                                <a class="git-link card-link"
+                                    href="https://github.com/0rphee/bda-dashboard">Repositorio</a>
+                            </div>
+                            <img class="img-fluid card-img-bottom" src="assets/images/bda-dashboard.png"
+                                alt="Screenshots del README del proyecto">
+                        </div>
+                        <!--Fin Proyecto -->
+
+                        <!-- Inicio Proyecto -->
+                        <div class="col card rounded-0 p-3">
+                            <div class="card-body">
                                 <h5 class="card-title">prop-logic-paevty</h5>
                                 <p class="card-text">Programa de línea de comando para crear tablas de verdad
                                     para <a href="https://typst.app/">typst</a> a partir de fórmulas
@@ -490,23 +575,16 @@
                         <!-- Inicio Proyecto -->
                         <div class="col card rounded-0 p-3">
                             <div class="card-body">
-                                <h5 class="card-title">asmh</h5>
+                                <h5 class="card-title">compdist-proy</h5>
                                 <p class="card-text">
-                                    Proyecto final de la clase Arquitectura de Computadoras.
-                                </p>
-                                <p class="card-text">
-                                    Un ensamblador para el chip Intel 8086 (x86 de 16 bits). Soporta
-                                    algunos tipos de <span class="font-monospace">MOV</span>, todos 
-                                    las <span class="font-monospace">INT</span>, algunos <span 
-                                    class="font-monospace">INC</span>, y algunos tipos de salto a etiquetas.
-                                    Fue probado con el emulador 'emu8086'.
+                                    Proyecto final de la clase Cómputo Distribuido: una calculadora distribuida con una arquitectura ADSOA.
                                 </p>
 
-                                <span class="text-decoration-underline card-link">Haskell</span>
-                                <a class="git-link card-link"
-                                    href="https://github.com/0rphee/asmh">Repositorio</a>
+                                <span class="text-decoration-underline card-link">Java</span>
+                                <span class="text-decoration-underline card-link">JavaFX</span>
+                                <a class="git-link card-link" href="https://github.com/0rphee/compdist-proy">Repositorio</a>
                             </div>
-                            <img class="img-fluid card-img-bottom" src="assets/images/asmh.png"
+                            <img class="img-fluid card-img-bottom" src="assets/images/compdist-proy.png"
                                 alt="Screenshots del README del proyecto">
                         </div>
                         <!--Fin Proyecto -->
@@ -559,53 +637,6 @@
                                 <a class="git-link card-link" href="https://github.com/0rphee/taki">Repositorio</a>
                             </div>
                             <img class="img-fluid card-img-bottom" src="assets/images/taki.png"
-                                alt="Screenshots del README del proyecto">
-                        </div>
-                        <!--Fin Proyecto -->
-
-                        <!-- Inicio Proyecto -->
-                        <div class="col card rounded-0 p-3">
-                            <div class="card-body">
-                                <h5 class="card-title">bda-dashboard</h5>
-                                <p class="card-text">
-                                    Proyecto final de la clase de Bases de Datos Avanzadas: un
-                                    dashboard de visualizaión de datos de Steam.
-                                </p>
-                                <p class="card-text">
-                                    El backend de Flask se comunica una base de datos MySQL para mandar los Datos
-                                    al frontend escrito en React. Los servicios se pueden lanzar localmente con
-                                    Docker.
-                                </p>
-
-                                <span class="text-decoration-underline card-link">Python</span>
-                                <span class="text-decoration-underline card-link">MySQL</span>
-                                <span class="text-decoration-underline card-link">phpMyAdmin</span>
-                                <span class="text-decoration-underline card-link">JavaScript</span>
-                                <span class="text-decoration-underline card-link">React</span>
-                                <span class="text-decoration-underline card-link">Docker</span>
-                                <a class="git-link card-link"
-                                    href="https://github.com/0rphee/bda-dashboard">Repositorio</a>
-                            </div>
-                            <img class="img-fluid card-img-bottom" src="assets/images/bda-dashboard.png"
-                                alt="Screenshots del README del proyecto">
-                        </div>
-                        <!--Fin Proyecto -->
-
-                        <!-- Inicio Proyecto -->
-                        <div class="col card rounded-0 p-3">
-                            <div class="card-body">
-                                <h5 class="card-title">xolsh</h5>
-                                <p class="card-text">
-                                    Implementación en Haskell del lenguaje <span class="font-monospace">lox</span> del
-                                    libro
-                                    <a href="https://craftinginterpreters.com/">Crafting Interpreters</a>. Aún sin
-                                    terminar.
-                                </p>
-
-                                <span class="text-decoration-underline card-link">Haskell</span>
-                                <a class="git-link card-link" href="https://github.com/0rphee/xolsh">Repositorio</a>
-                            </div>
-                            <img class="img-fluid card-img-bottom" src="assets/images/xolsh.png"
                                 alt="Screenshots del README del proyecto">
                         </div>
                         <!--Fin Proyecto -->
@@ -756,7 +787,7 @@
                     </div>
                     <div class="card rounded-0 col-sm-12 col-md-7 p-3 highlight">
                         <h4>Voluntariado</h4>
-                        <h6>Fundación Iluminando con Amor (junio 2023 - junio 2024)</h6>
+                        <h6>Fundación Iluminando con Amor (junio 2023 - actualidad)</h6>
                         <p>
                             Ayuda en el desarrollo de actividades de acompañamiento y recreación para niñas y
                             adolescentes
